@@ -1,0 +1,66 @@
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: block;
+}
+.clearfix {
+	clear: both;
+}
+
+.carouselitem {
+	float: left;
+}
+
+.show {
+	position: relative;
+	left: 0;
+	top: 0;	
+	width: 3650px;
+	height: 336px;
+	transition: left 1s ease;
+}
+
+.carousel {
+	position: relative;
+	width: 730px;
+	overflow: hidden;
+}
+.dots {
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -75px;
+}
+.dot {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #fff;
+	display: inline-block;
+	margin-left: 10px;
+}
+.dot-active {
+	background-color: rgb(198, 211, 93);
+}
+.go, .pre {
+	position: absolute;
+	width: 30px;
+	height: 50px;
+	background-color: #ccc;
+	line-height: 50px;
+	font-size: 40px;
+	text-align: center;
+	opacity: .3;
+	cursor: pointer;
+}
+.go {
+	top: 50%;
+	margin-top: -25px;
+	right: 20px;
+}
+.pre {
+	top: 50%;
+	margin-top: -25px;
+	left: 20px;
+}
